@@ -24,6 +24,9 @@ app.use("/companies", companiesRoutes)
 const usersRoutes = require("./routes/users")
 app.use("/users", usersRoutes)
 
+const authRoutes = require("./routes/auth")
+app.use("/auth", authRoutes)
+
 app.listen(config.port || 3000, () => {
   console.log(`Running on ${config.port}`)
 })
