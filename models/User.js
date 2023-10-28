@@ -20,6 +20,10 @@ const User = db.define("users", {
     type : DataTypes.TEXT
   },
 
+  phone : {
+    type : DataTypes.TEXT
+  },
+
   profile : {
     type : DataTypes.TEXT
   },
